@@ -1,0 +1,21 @@
+{
+  "name": "@justinlu/commerce-ui",
+  "version": "1.0.0",
+  "description": "UI components for using across ecommerce project. Currently it basically use inside OrderHQ projects.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zustin-lu/commerce-ui.git"
+  },
+  "author": "Justin Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zustin-lu/commerce-ui/issues"
+  },
+  "homepage": "https://github.com/zustin-lu/commerce-ui#readme",
+  "devDependencies": {
+    "react": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
