@@ -15,7 +15,8 @@
   "scripts": {
     "prepare": "husky",
     "clean": "rimraf dist *.tgz",
-    "build": "npm run clean && tsup"
+    "build:css": "postcss src/theme.css -d dist",
+    "build": "npm run clean && tsup && npm run build:css"
   },
   "repository": {
     "type": "git",
@@ -33,10 +34,15 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@types/react": "^18.3.3",
     "agadoo": "^3.0.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.2",
     "husky": "^9.0.11",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^5.0.7",
+    "tailwindcss": "^3.4.4",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   }

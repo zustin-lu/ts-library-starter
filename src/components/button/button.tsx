@@ -6,5 +6,5 @@ export type ButtonProps = {
 };
 
 export const Button: FC<ButtonProps> = ({ label, text }) => {
-  return <button type="button">Click me!${label}${text}</button>;
+  return <button type="button" className="text-red-700">Click me!${label}${text}</button>;
 };
