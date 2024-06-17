@@ -1,10 +1,9 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 
-export type ButtonProps = {
-  label: string;
-  text: string;
-};
+export type ButtonProps = PropsWithChildren;
 
-export const Button: FC<ButtonProps> = ({ label, text }) => {
-  return <button type="button" className="text-red-700">Click me!${label}${text}</button>;
+export const Button: FC<ButtonProps> = ({ children }) => {
+  return <button type="button" className="text-red-700">
+    {children}
+  </button>;
 };
